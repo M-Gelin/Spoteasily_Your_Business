@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GBP Agency – Dominate Local Search</title>
+<meta name="description" content="Améliorez votre visibilité sur Google Maps avec SpotEasily Your Business. Attirez plus de clients locaux et développez votre entreprise grâce à notre expertise en référencement local.">
+<!-- French Title -->
+<title>Spoteasily – Dominez la Recherche Locale</title>
+
+<!-- Favicon Package Tags -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+ 
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -68,17 +77,17 @@
   .proof-num span { color: var(--gold); }
   .proof-label { font-size: .8rem; color: #64748b; text-transform: uppercase; letter-spacing: .8px; margin-top: 2px; }
 
-  /* FEATURES */
+  /* services */
   section { padding: 100px 20px; max-width: 1100px; margin: 0 auto; }
   .section-label { text-align: center; font-size: .8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold); font-weight: 700; margin-bottom: 14px; }
   .section-title { text-align: center; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 16px; letter-spacing: -1px; }
   .section-sub { text-align: center; color: #64748b; font-size: 1rem; max-width: 560px; margin: 0 auto 60px; line-height: 1.7; }
-  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
-  .feature-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 32px; transition: border-color .2s, background .2s; }
-  .feature-card:hover { border-color: rgba(37,99,235,0.4); background: rgba(37,99,235,0.04); }
-  .feature-icon { font-size: 2rem; margin-bottom: 16px; }
-  .feature-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
-  .feature-card p { color: #64748b; font-size: .92rem; line-height: 1.7; }
+  .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .service-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 32px; transition: border-color .2s, background .2s; }
+  .service-card:hover { border-color: rgba(37,99,235,0.4); background: rgba(37,99,235,0.04); }
+  .service-icon { font-size: 2rem; margin-bottom: 16px; }
+  .service-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+  .service-card p { color: #64748b; font-size: .92rem; line-height: 1.7; }
 
   /* TESTIMONIALS */
   .testimonials-section { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
@@ -104,96 +113,118 @@
     nav { padding: 16px 20px; }
     nav a:not(.nav-cta) { display: none; }
   }
+  .video-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Adjust this to make the video player larger or smaller on screen */
+  margin: 0 auto;
+  aspect-ratio: 16 / 9; /* Automatically locks the responsive 16:9 widescreen shape */
+  border-radius: 16px; /* Matches the smooth corners of your feature cards */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Adds a premium depth effect */
+  }
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="logo">GBP<span>Pro</span></div>
+  <div class="logo">
+  <!-- The Logo Icon/Sign -->
+  <img src="/apple-touch-icon.png" alt="SpotEasily Your Business Logo" class="logo-icon">
+  
+  <!-- The Agency Name -->
+  SpotEasily<span>Your Business</span>
+</div>
   <div>
-    <a href="#features">Features</a>
-    <a href="#testimonials">Results</a>
-    <a href="#cta" class="nav-cta">Get Started →</a>
+    <a href="#services">services</a>
+    <a href="#testimonials">Resultats</a>
+    <a href="#cta" class="nav-cta">Commencer →</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="badge">🚀 Google Business Profile Experts</div>
-  <h1>Rank #1 on Google Maps.<br><em>Get More Clients.</em> Fast.</h1>
-  <p class="subtitle">We fully optimize and manage your Google Business Profile so local customers find you first — and choose you over every competitor.</p>
+  <div class="badge">🚀 Le gestionnaire de confiance pour votre Google Business Profile</div>
+  <h1>Classer #1 sur Google Maps.<br><em>Avoir plus de Clients.</em> Rapidement.</h1>
+  <p class="subtitle">On gère et propulse votre fiche Google Business Profile pour vous placer en tête des recherches locales et inciter les clients à vous choisir plutôt que vos concurrents.</p>
 
   <!-- VSL PLAYER -->
   <div class="vsl-wrapper">
-    <div class="vsl-container" id="vslContainer">
-      <!-- Replace src with your actual video URL -->
-      <video id="vslVideo" preload="metadata" poster="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
-      <div class="play-overlay" id="playOverlay">
-        <div class="play-btn">
-          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </div>
-        <div class="play-label">Watch How We Get You Results (2 min)</div>
-      </div>
-    </div>
-    <div class="progress-bar" id="progressBar">
-      <div class="progress-fill" id="progressFill"></div>
-    </div>
-    <p class="vsl-caption">⚡ <strong>2,400+ local businesses</strong> already trust GBPPro to dominate their market</p>
+  <div class="vsl-container" id="vslContainer">
+    <!-- YouTube Responsive Embed -->
+    <iframe 
+      id="vslVideo"
+      src="https://www.youtube.com/embed/9zQyh8y5a-M?rel=0&modestbranding=1" 
+      title="SpotEasily Your Business - VSL" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  
+  <!-- French Translated & Rebranded Caption -->
+  <p class="vsl-caption">⚡ Plus de <strong> 200 entreprises </strong> reconnaissent déjà SpotEasily sur le marché local.</p>
   </div>
 
   <!-- CTA BUTTONS -->
   <div class="cta-group">
-    <a href="#cta" class="btn-primary">Get My Free GBP Audit <span class="arrow">→</span></a>
-    <a href="#features" class="btn-secondary">📋 See What We Do</a>
+    <a href="#cta" class="btn-primary">Mon Audit GBP GRATUIT <span class="arrow">→</span></a>
+    <a href="#services" class="btn-secondary">📋 Comment on fait ?</a>
   </div>
 </section>
 
 <!-- PROOF STRIP -->
 <div class="proof-strip">
-  <div class="proof-item"><div class="proof-num">2<span>,400</span>+</div><div class="proof-label">Businesses Optimized</div></div>
-  <div class="proof-item"><div class="proof-num">4<span>.9★</span></div><div class="proof-label">Average Client Rating</div></div>
-  <div class="proof-item"><div class="proof-num">3<span>x</span></div><div class="proof-label">Avg Traffic Increase</div></div>
-  <div class="proof-item"><div class="proof-num">14<span>d</span></div><div class="proof-label">Avg Time to Results</div></div>
+  <div class="proof-item"><div class="proof-num">2<span>,400</span>+</div><div class="proof-label">Profil Optimizé</div></div>
+  <div class="proof-item"><div class="proof-num">4<span>.9★</span></div><div class="proof-label">Note moyenne des clients</div></div>
+  <div class="proof-item"><div class="proof-num">3<span>x</span></div><div class="proof-label">Croissance moyenne</div></div>
+  <div class="proof-item"><div class="proof-num">14<span>d</span></div><div class="proof-label">Délai moyen avant résultats</div></div>
 </div>
 
-<!-- FEATURES -->
-<section id="features">
-  <div class="section-label">What We Do</div>
-  <h2 class="section-title">Everything Your GBP Needs to Win</h2>
-  <p class="section-sub">A complete done-for-you service that turns your Google Business Profile into a client-generating machine.</p>
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feature-icon">🗺️</div>
-      <h3>Full Profile Optimization</h3>
-      <p>We audit and rebuild your GBP from scratch — categories, attributes, service areas, photos, descriptions — all keyword-optimized.</p>
+<!-- services -->
+<section id="services">
+  <div class="section-label">Ce qu'on fait</div>
+  <h2 class="section-title">Tout ce dont votre fiche GBP a besoin</h2>
+  <p class="section-sub">Un service clé en main pour transformer votre fiche Google Business en un système à générer des clients.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🗺️</div>
+      <h3>Optimiser entièrement votre profil</h3>
+      <p>Audit et refonte complète de votre profil Google Business : catégories, attributs, zones d'intervention, photos et descriptions, entièrement optimisés pour le SEO local.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">⭐</div>
-      <h3>Review Generation System</h3>
-      <p>Our proven system consistently gets your happy clients to leave 5-star reviews — and handles responses professionally on your behalf.</p>
+    <div class="service-card">
+      <div class="service-icon">⭐</div>
+      <h3>Système de génération d'avis</h3>
+      <p>Notre système éprouvé incite régulièrement vos clients à laisser des avis et nous gérons les réponses d'une manière professionnelle en votre nom.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">📸</div>
-      <h3>Weekly GBP Posts & Photos</h3>
-      <p>Fresh content posted weekly keeps Google's algorithm happy and gives local customers a reason to choose you over the competition.</p>
+    <div class="service-card">
+      <div class="service-icon">📸</div>
+      <h3>Post & photos hebdomadaires</h3>
+      <p>Du contenu frais publié chaque semaine permet de satisfaire l'algorithme de Google et donne aux clients locaux une excellente raison de vous choisir plutôt que la concurrence.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">📍</div>
-      <h3>Local Citation Building</h3>
-      <p>We build consistent NAP citations across 50+ directories so Google trusts your business and ranks you higher in the Map Pack.</p>
+    <div class="service-card">
+      <div class="service-icon">📍</div>
+      <h3>Création de citations locales</h3>
+      <p>On développe des citations NAP cohérentes sur plus de 50 annuaires pour que Google fasse confiance à votre entreprise et vous positionne plus haut dans le Map Pack.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">📊</div>
-      <h3>Monthly Ranking Reports</h3>
-      <p>Transparent reporting every month showing your keyword rankings, profile views, calls generated and direction requests.</p>
+    <div class="service-card">
+      <div class="service-icon">📊</div>
+      <h3>Rapports mensuels de position</h3>
+      <p>Un suivi transparent chaque mois indiquant le classement de vos mots-clés, les vues du profil, les appels générés et les demandes de directions.</p>
     </div>
-    <div class="feature-card">
-      <div class="feature-icon">🛡️</div>
-      <h3>GBP Protection & Monitoring</h3>
-      <p>We watch your profile 24/7 for spam, hijacks, and algorithm changes — so your ranking stays protected without you lifting a finger.</p>
+    <div class="service-card">
+      <div class="service-icon">🛡️</div>
+      <h3>Veille & sécurisation de votre GBP</h3>
+      <p>On surveille votre profil 24h/24 et 7j/7 contre le spam, les tentatives de piratage et les changements d'algorithme. Votre classement reste protégé sans que vous n'ayez à lever le petit doigt.</p>
     </div>
   </div>
 </section>
@@ -201,23 +232,23 @@
 <!-- TESTIMONIALS -->
 <div class="testimonials-section">
   <section id="testimonials">
-    <div class="section-label">Client Results</div>
-    <h2 class="section-title">Real Businesses. Real Results.</h2>
-    <p class="section-sub">Don't take our word for it — here's what our clients say after working with GBPPro.</p>
+    <div class="section-label">Nos impacts</div>
+    <h2 class="section-title">Business Réels. Resultats Palpables.</h2>
+    <p class="section-sub">Ne nous croyez pas sur parole, voici ce que disent nos clients après avoir travaillé avec SpotEasily.</p>
     <div class="testimonials-grid">
       <div class="tcard">
         <div class="stars">★★★★★</div>
-        <p>"Within 3 weeks we went from page 3 to the top 3 in the Map Pack. Phone calls doubled. Best investment for our plumbing business."</p>
+        <p>"En l'espace de 3 semaines, nous sommes passés de la page 3 au top 3 du Map Pack. Les appels téléphoniques ont doublé. Le meilleur investissement pour notre entreprise de plomberie."</p>
         <div class="tauthor"><div class="avatar" style="background:#2563eb">M</div><div class="tauthor-info"><strong>Mike Torres</strong><span>Owner, Torres Plumbing</span></div></div>
       </div>
       <div class="tcard">
         <div class="stars">★★★★★</div>
-        <p>"We were invisible online. GBPPro got us to #1 for 'dentist near me' in our city. New patient appointments are up 60% in 2 months."</p>
+        <p>"Nous étions invisibles sur le web. SpotEasily nous a hissés à la première place pour la recherche 'dentiste à proximité' dans notre ville. Les rendez-vous de nouveaux patients ont augmenté de 60 % en 2 mois."</p>
         <div class="tauthor"><div class="avatar" style="background:#7c3aed">S</div><div class="tauthor-info"><strong>Dr. Sarah Lin</strong><span>Brightsmile Dental</span></div></div>
       </div>
       <div class="tcard">
         <div class="stars">★★★★★</div>
-        <p>"I was skeptical at first, but the results speak for themselves. 40+ new Google reviews in 6 weeks and we're ranking for keywords we never thought possible."</p>
+        <p>"J'étais sceptique au début, mais les résultats parlent d'eux-mêmes. Plus de 40 nouveaux avis Google en 6 semaines et nous nous positionnons sur des mots-clés que nous n'aurions jamais crus possibles."</p>
         <div class="tauthor"><div class="avatar" style="background:#059669">R</div><div class="tauthor-info"><strong>Rachel M.</strong><span>RM Real Estate Group</span></div></div>
       </div>
     </div>
@@ -226,17 +257,17 @@
 
 <!-- FINAL CTA -->
 <div class="final-cta" id="cta">
-  <h2>Ready to Dominate Local Search?</h2>
-  <p>Get a free GBP audit and see exactly what's holding your business back from ranking #1 — no strings attached.</p>
+  <h2>Prêt à dominer la recherche locale ?</h2>
+  <p>Obtenez un audit gratuit de votre fiche GBP et découvrez exactement ce qui empêche votre entreprise de se positionner à la 1ère place, sans engagement.</p>
   <a href="mailto:hello@gbppro.com" class="btn-primary" style="display:inline-flex;font-size:1.1rem;padding:18px 44px;">
-    Claim My Free Audit <span class="arrow">→</span>
+    Lancer mon audit gratuit <span class="arrow">→</span>
   </a>
-  <p style="margin-top:20px;font-size:.85rem;color:#374151;">No credit card. No commitment. Just results.</p>
+  <p style="margin-top:20px;font-size:.85rem;color:#374151;">Sans carte. Ni engagement. Juste des résultats.</p>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 <span>GBPPro Agency</span> · All rights reserved · <a href="#" style="color:#4b5563;text-decoration:none;">Privacy Policy</a></p>
+  <p>© 2026 <span>SpotEasily Your Business</span> · All rights reserved · <a href="#" style="color:#4b5563;text-decoration:none;">Privacy Policy</a></p>
 </footer>
 
 <script>
