@@ -1,1 +1,24 @@
-{ "version": 2, "cleanUrls": true, "rewrites": [ { "source": "/", "destination": "/index.html" } ] }
+{
+  "version": 2,
+  "cleanUrls": true,
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/favicon.ico",
+      "dest": "/public/favicon.ico"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "dest": "/public/apple-touch-icon.png"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
