@@ -9,12 +9,8 @@
   ],
   "routes": [
     {
-      "src": "/favicon.ico",
-      "dest": "/public/favicon.ico"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "dest": "/public/apple-touch-icon.png"
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
     },
     {
       "src": "/(.*)",
