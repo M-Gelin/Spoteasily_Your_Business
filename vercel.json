@@ -6,42 +6,17 @@
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "X-Frame-Options",
-          "value": "DENY"
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        },
-        {
-          "key": "Permissions-Policy",
-          "value": "geolocation=(), microphone=(), camera=()"
-        }
-      ]
-    },
-    {
-      "source": "/(manifest.json|favicon.ico)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
   ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "dest": "/index.html"
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/public/index.html" },
+    { "source": "/manifest.json", "destination": "/public/manifest.json" },
+    { "source": "/favicon.ico", "destination": "/public/favicon.ico" },
+    { "source": "/site.webmanifest", "destination": "/public/site.webmanifest" },
+    { "source": "/(.*)", "destination": "/public/$1" }
   ]
 }
