@@ -3,9 +3,9 @@
   "name": "Spoteasily",
   "icons": [
     {
-      "src": "/Logo_Fav.png",
-      "sizes": "16x16",
-      "type": "image/png"
+      "src": "https://cdn.jsdelivr.net/gh/M-Gelin/File_Store/refs/heads/@main/Logo_Fav.svg",
+      "sizes": "10x10",
+      "type": "image/svg+xml"
     },
   ],
   "start_url": ".",
