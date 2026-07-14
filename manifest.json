@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "https://cdn.jsdelivr.net/gh/M-Gelin/File_Store/refs/heads/@main/Logo_Fav.svg",
-      "sizes": "10x10",
+      "sizes": "any",
       "type": "image/svg+xml"
     },
   ],
