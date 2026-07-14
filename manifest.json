@@ -3,10 +3,10 @@
   "name": "Spoteasily",
   "icons": [
     {
-      "src": "https://cdn.jsdelivr.net/gh/M-Gelin/File_Store/refs/heads/@main/Logo_Fav.svg",
+      "src": "https://cdn.jsdelivr.net/gh/M-Gelin/File_Store@main/Logo_Fav.svg",
       "sizes": "any",
       "type": "image/svg+xml"
-    },
+    }
   ],
   "start_url": ".",
   "display": "standalone"
