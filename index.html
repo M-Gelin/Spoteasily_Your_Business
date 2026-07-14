@@ -49,7 +49,16 @@
   /* VSL PLAYER */
   .vsl-wrapper { width: 100%; max-width: 820px; margin: 0 auto 48px; position: relative; }
   .vsl-container { position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 40px 80px rgba(0,0,0,0.6), 0 0 80px rgba(37,99,235,0.2); background: #000; aspect-ratio: 16/9; cursor: pointer; }
-  .vsl-container video { width: 100%; height: 100%; display: block; object-fit: cover; }
+  /* Target both native video tags and embedded video iframes */
+  .vsl-container video, 
+  .vsl-container iframe 
+ { 
+  width: 100%; 
+  height: 100%; 
+  display: block; 
+  border: none;
+  object-fit: cover; 
+ }
   .play-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0,0,0,0.45); transition: opacity .3s; }
   .play-overlay.hidden { opacity: 0; pointer-events: none; }
   .play-btn { width: 88px; height: 88px; background: var(--blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 12px rgba(37,99,235,0.2); transition: transform .2s, box-shadow .2s; margin-bottom: 16px; }
@@ -160,18 +169,27 @@
   <p class="subtitle">On gère et propulse votre fiche Google Business Profile pour vous placer en tête des recherches locales et inciter les clients à vous choisir plutôt que vos concurrents.</p>
 
   <!-- VSL PLAYER -->
-  <div class="vsl-wrapper">
+ <div class="vsl-wrapper">
   <div class="vsl-container" id="vslContainer">
     <!-- YouTube Responsive Embed -->
     <iframe 
       id="vslVideo"
-      src="https://www.youtube.com/embed/9zQyh8y5a-M?rel=0&modestbranding=1" 
+      src="https://www.youtube.com/embed/9zQyh8y5a-M?rel=0&modestbranding=1&enablejsapi=1" 
       title="SpotEasily Your Business - VSL" 
       frameborder="0" 
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
       allowfullscreen>
     </iframe>
+    
+    <!-- Your Play Overlay -->
+    <div class="play-overlay" id="playOverlay">
+      <div class="play-btn">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div class="play-label">WATCH PRESENTATION</div>
+    </div>
   </div>
+</div>
   
   <!-- French Translated & Rebranded Caption -->
   <p class="vsl-caption">⚡ Plus de <strong> 200 entreprises </strong> reconnaissent déjà SpotEasily sur le marché local.</p>
