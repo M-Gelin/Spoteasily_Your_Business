@@ -1,0 +1,11 @@
+# Spoteasily Your Business
+
+> A dedicated Local SEO and Google Business Profile (GBP) optimization agency helping small businesses maximize local visibility, secure top rankings, and convert searchers into customers.
+
+## Core Services
+
+- [Our Services](https://spoteasily.netlify.app/#services): Our complete suite of Local SEO and GBP maintenance services. This is the primary page for understanding how we audit, build, optimize, and maintain high-performing local business profiles to drive inbound leads.
+
+## Resultats
+
+- [Score](https://spoteasily.netlify.app/#resultats): The reviews for Spoteasily Your Business, outlining our results and how clients see our work.
