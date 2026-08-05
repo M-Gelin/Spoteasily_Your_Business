@@ -156,7 +156,7 @@
   .service-card p { color: #64748b; font-size: .92rem; line-height: 1.7; }
 
   /* TESTIMONIALS */
-  .testimonials-section { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+  /*.testimonials-section { background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
   .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
   .tcard { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 28px; }
   .stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
@@ -299,8 +299,36 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- RESULTS & CASE STUDY -->
 <div class="testimonials-section">
+  <section id="testimonials">
+    <div class="section-label">Preuve par l'exemple</div>
+    <h2 class="section-title">Regardez Comment Nous Dominerons Votre Marché Local.</h2>
+    <p class="section-sub">Pas de promesses en l'air. Voici l'analyse concrète de l'optimisation réalisée pour un client.</p>
+    
+    <!-- CASE STUDY VIDEO EMBED -->
+    <div class="vsl-wrapper" style="max-width: 800px; margin: 0 auto;">
+      <div class="vsl-container" id="vslContainer" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1);">
+        <!-- YouTube Responsive Embed -->
+        <iframe 
+          id="case-studio-video"
+          src="https://www.youtube.com/embed/HxsHFfsL3Rg?rel=0&modestbranding=1" 
+          title="SpotEasily Case Study - Local SEO Results" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="vsl-caption" style="text-align: center; margin-top: 12px; font-size: 0.95rem; color: #666;">
+        Étude de cas détaillée : De l'invisible au Top 3 du Map Pack local.
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- TESTIMONIALS -->
+<!-- div class="testimonials-section">
   <section id="testimonials">
     <div class="section-label">Nos impacts</div>
     <h2 class="section-title">Business Réels. Resultats Palpables.</h2>
@@ -323,7 +351,7 @@
       </div>
     </div>
   </section>
-</div>
+</div -->
 
 <!-- FINAL CTA -->
 <div class="final-cta" id="cta">
