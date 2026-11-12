@@ -131,4 +131,298 @@
   @media (max-width: 600px) {
     nav { padding: 16px 20px; }
     nav a:not(.nav-cta) { display: none; }
-    nav .nav-services { display: inline-block;
+    nav .nav-services { display: inline-block; margin-left: 12px; }
+    nav .nav-services > .nav-services-trigger { display: inline-flex; }
+    nav .nav-services-menu { left: auto; right: 0; min-width: min(280px, calc(100vw - 40px)); }
+    nav .nav-services-menu a { display: flex; white-space: normal; }
+    section { padding: 60px 20px; }
+    .hero { padding: 120px 20px 60px; }
+    .hero-panel { padding: 24px; }
+    .final-cta { padding: 56px 24px; }
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="logo" style="margin-left:0;">
+    <img src="./Logo1-removebg-preview.png" alt="SpotEasily Your Business Logo" class="logo-icon" width="55">
+    SpotEasily<span> Your Business</span>
+  </a>
+  <div>
+    <div class="nav-services">
+      <a href="index.html#services" class="nav-services-trigger" aria-haspopup="true">Services</a>
+      <div class="nav-services-menu" aria-label="Services par métier">
+        <a href="plombiers.html"><span aria-hidden="true">🔧</span> Référencement local pour plombiers</a>
+        <a href="electriciens.html"><span aria-hidden="true">⚡</span> Référencement local pour électriciens</a>
+        <a href="chauffagistes.html"><span aria-hidden="true">🌡️</span> Référencement local pour chauffagistes</a>
+        <a href="serruriers.html"><span aria-hidden="true">🔑</span> Référencement local pour serruriers</a>
+      </div>
+    </div>
+    <a href="index.html#testimonials">Résultats</a>
+    <a href="#contact" class="nav-cta">Audit gratuit →</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="badge">🌡️ Référencement local pour chauffagistes</div>
+
+        <h1>
+          Chauffagiste : <em>soyez trouvé</em> avant que votre prochain client appelle un concurrent
+        </h1>
+
+        <p class="hero-text">
+          Une chaudière en panne, un chauffage à installer ou une
+          pompe à chaleur à entretenir : vos clients recherchent
+          des professionnels près de chez eux. Mais si votre entreprise
+          est difficile à trouver sur Google Maps, ils risquent de
+          contacter quelqu'un d'autre.
+        </p>
+
+        <a href="#contact" class="btn-primary">
+          Faire le point sur ma visibilité <span class="arrow">→</span>
+        </a>
+
+        <p class="hero-note">
+          Vous vous occupez du chauffage. Nous vous aidons à travailler votre visibilité.
+        </p>
+      </div>
+
+      <div class="hero-panel">
+        <h2>Vos futurs clients recherchent peut-être :</h2>
+
+        <div class="search-example"><span>🔎</span> Chauffagiste près de chez moi</div>
+        <div class="search-example"><span>🔎</span> Dépannage chaudière</div>
+        <div class="search-example"><span>🔎</span> Installation pompe à chaleur</div>
+
+        <p class="panel-note">
+          Si votre fiche Google est incomplète ou peu visible,
+          vous risquez de manquer des occasions d'être contacté.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THE HEATING ENGINEER'S PROBLEMS -->
+  <section class="problems">
+    <div class="container">
+
+      <h2>Votre métier est exigeant. Trouver des clients ne devrait pas devenir un autre chantier.</h2>
+
+      <p class="section-intro">
+        Entre les dépannages, l'entretien des chaudières, les installations
+        et les déplacements, vous devez gérer beaucoup de choses.
+        Votre présence sur Google peut facilement passer au second plan.
+        Voici quelques difficultés que vous connaissez peut-être.
+      </p>
+
+      <div class="problems-grid">
+
+        <article class="problem-card">
+          <span class="problem-number">PROBLÈME 01</span>
+          <h3>Votre activité dépend des demandes des clients</h3>
+          <p>
+            Vous souhaitez recevoir davantage de demandes pour vos
+            prestations, mais les clients ne peuvent pas vous contacter
+            s'ils ne découvrent pas votre entreprise lorsqu'ils recherchent
+            un chauffagiste dans votre secteur.
+          </p>
+        </article>
+
+        <article class="problem-card">
+          <span class="problem-number">PROBLÈME 02</span>
+          <h3>Vos concurrents prennent de l'avance sur Google Maps</h3>
+          <p>
+            Même si vous proposez un travail sérieux, d'autres
+            chauffagistes peuvent être plus visibles dans les résultats
+            locaux et attirer l'attention des personnes qui cherchent
+            un professionnel.
+          </p>
+        </article>
+
+        <article class="problem-card">
+          <span class="problem-number">PROBLÈME 03</span>
+          <h3>Votre fiche Google ne montre pas tout ce que vous faites</h3>
+          <p>
+            Chaudières, pompes à chaleur, entretien ou dépannage :
+            si vos prestations sont mal présentées, les clients
+            peuvent avoir du mal à comprendre vos services et votre spécialité.
+          </p>
+        </article>
+
+        <article class="problem-card">
+          <span class="problem-number">PROBLÈME 04</span>
+          <h3>Vous n'avez pas le temps de tout gérer</h3>
+          <p>
+            Entre les clients, les chantiers et les urgences,
+            mettre à jour vos informations, ajouter des photos
+            et publier régulièrement n'est pas toujours une priorité.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TRANSITION FROM PROBLEM TO SOLUTION -->
+  <section class="transition">
+    <div class="container">
+
+      <h2>Et si vous n'aviez plus à vous occuper seul de votre visibilité sur Google ?</h2>
+
+      <p>
+        Vous connaissez votre métier. SpotEasily vous accompagne
+        pour mieux présenter votre entreprise en ligne et travailler
+        votre référencement local.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- WHAT SPOTEASILY CAN DO -->
+  <section class="solution">
+    <div class="container">
+
+      <div class="solution-heading">
+        <h2>SpotEasily vous aide à faire connaître votre entreprise localement</h2>
+
+        <p>
+          Nous travaillons sur votre fiche Google Business Profile
+          pour améliorer la présentation de vos services et renforcer
+          votre présence sur Google Maps. L'objectif : aider les clients
+          de votre secteur à découvrir votre entreprise et à vous contacter.
+        </p>
+      </div>
+
+      <div class="service-list">
+
+        <article class="service-card">
+          <span class="service-icon">📍</span>
+          <h3>Une fiche Google adaptée à votre activité</h3>
+          <p>
+            Nous vérifions les informations de votre entreprise,
+            vos catégories et vos prestations pour présenter clairement
+            vos services de chauffage, d'entretien et de dépannage.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">🛠️</span>
+          <h3>Des services clairement présentés</h3>
+          <p>
+            Chaudières, systèmes de chauffage, pompes à chaleur
+            ou entretien : nous vous aidons à mettre en valeur
+            les prestations que vous proposez réellement.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">📸</span>
+          <h3>Des photos et des actualités régulières</h3>
+          <p>
+            Nous vous aidons à maintenir une fiche vivante avec
+            des photos pertinentes et des publications qui présentent
+            votre activité aux clients potentiels.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon">⭐</span>
+          <h3>Une meilleure mise en valeur de vos avis</h3>
+          <p>
+            Nous vous accompagnons dans les bonnes pratiques pour
+            encourager vos clients satisfaits à partager leur expérience
+            et aider les futurs clients à mieux connaître votre entreprise.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW THE PROCESS WORKS -->
+  <section class="process">
+    <div class="container">
+
+      <h2>Comment SpotEasily vous accompagne</h2>
+
+      <p class="section-intro">
+        Pas besoin de devenir un expert du référencement local.
+        Nous commençons par comprendre votre situation avant
+        d'identifier les améliorations les plus pertinentes.
+      </p>
+
+      <div class="process-list">
+
+        <article class="process-step">
+          <span>ÉTAPE 01</span>
+          <h3>Nous examinons votre visibilité</h3>
+          <p>
+            Nous faisons le point sur votre fiche Google Business
+            Profile et sur la manière dont votre entreprise
+            se présente aux clients locaux.
+          </p>
+        </article>
+
+        <article class="process-step">
+          <span>ÉTAPE 02</span>
+          <h3>Nous identifions les améliorations</h3>
+          <p>
+            Nous déterminons les éléments à travailler :
+            informations, catégories, services, photos
+            et publications.
+          </p>
+        </article>
+
+        <article class="process-step">
+          <span>ÉTAPE 03</span>
+          <h3>Nous travaillons votre présence locale</h3>
+          <p>
+            Nous vous accompagnons dans l'amélioration et
+            l'entretien de votre fiche afin de soutenir
+            votre visibilité sur Google Maps dans la durée.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta" id="contact">
+    <div class="final-cta">
+
+      <h2>Votre prochain client recherche peut-être déjà un chauffagiste près de chez lui.</h2>
+
+      <p>
+        Prenons le temps d'examiner votre présence sur Google
+        et de voir comment SpotEasily peut vous aider à améliorer
+        la visibilité locale de votre entreprise.
+      </p>
+
+      <a href="index.html#cta" class="btn-primary" style="font-size:1.1rem;padding:18px 44px;">
+        Demander mon audit gratuit <span class="arrow">→</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>SpotEasily Your Business</span> · <a href="index.html">Accueil</a></p>
+  <p class="footer-links"><a href="plombiers.html">Plombiers</a> · <a href="electriciens.html">Électriciens</a> · <a href="chauffagistes.html">Chauffagistes</a> · <a href="serruriers.html">Serruriers</a></p>
+</footer>
+
+</body>
+</html>
